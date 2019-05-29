@@ -1,0 +1,40 @@
+{
+  "title": "Integration Layer Adapter",
+  "description": "Integration Layer Adapter for OIH",
+  "docsUrl": "https://github.com/WiceDe/integration-layer-adapter",
+  "credentials": {
+    "fields": {
+      "ilaId": {
+        "label": "IlaId",
+        "required": true,
+        "viewClass": "TextFieldView",
+        "note": "Integration Layer Adapter ID",
+        "placeholder": "1234asdf"
+      },
+      "cid": {
+        "label": "Common Identifier",
+        "required": true,
+        "viewClass": "TextFieldView",
+        "note": "Common Identifier Field",
+        "placeholder": "email"
+      },
+      "def": {}
+    }
+  },
+  "triggers": {
+    "getChunksPolling": {
+      "title": "Fetch valid chunks",
+      "description": "Get only valid chunks from ILS",
+      "type": "polling",
+      "main": "./lib/triggers/getChunksPolling.js",
+      "metadata": {}
+    }
+  },
+  "actions": {
+    "upsertChunk": {
+      "title": "Create a chunk in ILS",
+      "main": "./lib/actions/upsertChunk.js",
+      "metadata": {}
+    }
+  }
+}
