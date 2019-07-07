@@ -21,7 +21,7 @@
   "dependencies": {
     "co": "4.6.0",
     "elasticio-node": "0.0.9",
-    "elasticio-sailor-nodejs": "^2.3.0",
+    "elasticio-sailor-nodejs": "^2.4.0",
     "moment": "^2.24.0",
     "request": "^2.88.0",
     "request-promise": "4.1.1"
@@ -33,7 +33,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-json": "^1.2.1",
     "eslint-plugin-mocha": "^5.2.0",
-    "jenkins-mocha": "^7.0.0",
+    "jenkins-mocha": "^8.0.0",
     "mocha": "^5.2.0",
     "nock": "^9.6.1",
     "nyc": "^14.1.1",
